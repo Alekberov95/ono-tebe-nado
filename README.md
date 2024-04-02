@@ -24,4 +24,4 @@
 
 Вы можете найти исходный код этого проекта в репозитории GitHub по следующей ссылке:
 
-[ono-tebe-nado](git@github.com:Alekberov95/ono-tebe-nado.git)
+[ono-tebe-nado](https://github.com/Alekberov95/ono-tebe-nado.git)
