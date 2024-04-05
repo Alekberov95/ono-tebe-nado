@@ -23,6 +23,7 @@ img {
   max-width: 240px;
   display: flex;
   flex-direction: column;
+  line-height: 24px;
 }
 
 .overlay {

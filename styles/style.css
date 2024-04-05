@@ -23,7 +23,7 @@
 }
 
 .header_contacts {
-    justify-self: end; 
+    justify-self: end;
 }
 
 .header_nav-marker1 {
@@ -120,7 +120,7 @@
   }
 
 .lots {
-    margin: 179px 25px 0 25px; 
+    margin: 179px 25px 30px 25px; 
     color: black;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -160,6 +160,7 @@
 
 .lots_items {
     display: grid;
+    min-height: 563px;
 }
 
 .lots_item1 {
@@ -179,11 +180,11 @@
     font-weight: 400;
     line-height: 24.48px;
     grid-column: 1 / -1; 
-    margin: 5px 0 146px 40px;
+    margin-left: 65px;
 }
 
 .about {
-    margin: 0 25px 178px 25px;
+    margin: 146px 25px 178px 25px;
     display:flex
 }
 
@@ -204,7 +205,7 @@
 .about_info {
     display: flex;
     flex-direction: column;
-    margin-top: 133px;
+    margin-top: 135px;
     margin-left: 72px;
 }
 
