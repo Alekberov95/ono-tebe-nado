@@ -1,6 +1,6 @@
 .header {
     width: 1052px;
-    margin: 92px auto 96px;
+    margin: 98px auto 96px;
     padding: 0 26px;
     font-size: 18px;
     display: grid;
@@ -8,6 +8,9 @@
     align-items: center;
 }
 
+.nostyle_nav {
+    text-decoration: none;
+}
 
 .header_nav {
     display: flex;
@@ -20,6 +23,13 @@
 
 .header_nav-list-item2 {
     margin-right: 13px;
+}
+
+.contacts {
+    max-width: 240px;
+    display: flex;
+    flex-direction: column;
+    line-height: 24px;
 }
 
 .header_contacts {
@@ -35,12 +45,15 @@
 }
 
 .marker {
-    width: auto;
+    width: 8px;
+    height: 7px;
+    background-image: url(../images/list_marker.png);
+    align-items: center;
 }
 
 .header_logo {
-    width: auto;
-    
+    width: 148px;
+    height: 105px;
 }
 
 .jambotron {
@@ -49,8 +62,19 @@
     padding: 165px 50px 0;
     display: flex;
     flex-direction: column;
-    height: 757px;
+    position: relative;
+    min-height: 757px;
     width: 100%;
+}
+
+.overlay {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .jambotron_tittle {
@@ -74,15 +98,18 @@
 .jambotron_tittle-text1 {
     text-align: start;
     margin-bottom: 12px;
+    z-index: 2;
 }
 
 .jambotron_tittle-text2 {
     text-align: center;
     margin-bottom: 5px;
+    z-index: 2;
 }
 
 .jambotron_tittle-text3 {
     text-align: end;
+    z-index: 2;
 }
 
 .jambotron_subtittle {
@@ -91,6 +118,7 @@
     color: white;
     font-size: 22px;
     margin-left: 35px;
+    z-index: 2;
 }
 
 .jambotron_subtittle-text {
@@ -99,13 +127,12 @@
     white-space: nowrap;
     font-weight: 400;
     font-size: 22px;
-    margin-top: 130px;
-    line-height: 28px;   
+    margin-top: 128px;
+    line-height: 28px;
 }
 
 .jambotron_subtittle-button {
-    width: 256px;
-    height: 51px;
+    padding: 12px 32px;
     margin-left: 77px;
     margin-top: 130px;
     border: 1px solid white;
@@ -116,15 +143,19 @@
 
 .jambotron_subtittle-button:hover {
     background-color: white;
-    color: black; 
-  }
+    color: black;
+}
 
 .lots {
-    margin: 179px 25px 30px 25px; 
+    margin: 179px 25px 30px 25px;
     color: black;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
+}
+
+.lots_links:hover {
+    transform: scale(1.02);
 }
 
 .lots_tittle {
@@ -143,11 +174,11 @@
     text-decoration: underline;
     text-transform: uppercase;
     line-height: 26.4px;
-    margin: 48px 40px 0; 
-    
+    z-index: 2;
+    margin: 48px 40px 0;
 }
 
-.lots_items_subtittle{ 
+.lots_items_subtittle {
     color: white;
     font-size: 20px;
     font-weight: 400;
@@ -156,6 +187,7 @@
     margin-right: 40px;
     margin-bottom: 48px;
     align-self: end;
+    z-index: 2;
 }
 
 .lots_items {
@@ -165,27 +197,36 @@
 
 .lots_item1 {
     background-image: url(../images/card-lot-01.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
 }
 
 .lots_item2 {
     background-image: url(../images/card-lot-02.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
 }
 
 .lots_item3 {
     background-image: url(../images/card-lot-03.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
 }
 
 .lots_footer {
     font-size: 20px;
     font-weight: 400;
     line-height: 24.48px;
-    grid-column: 1 / -1; 
+    grid-column: 1 / -1;
     margin-left: 65px;
 }
 
 .about {
     margin: 146px 25px 178px 25px;
-    display:flex
+    display: flex;
 }
 
 .about_logo-border {
@@ -199,7 +240,9 @@
 }
 
 .about_logo {
-    margin: auto; 
+    margin: auto;
+    height: 114px;
+    width: 148px;
 }
 
 .about_info {
@@ -225,13 +268,18 @@
     max-width: 693px;
 }
 
+.header_nav-items:hover,
+.footer_nav-items:hover {
+    color: rgb(51, 27, 119);
+}
+
 .footer {
     width: 1000px;
     font-size: 18px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: flex-start;
-    margin: 178px 50px 91px ;
+    margin: 178px 50px 91px;
 }
 
 .footer_nav {
@@ -241,12 +289,17 @@
     justify-self: center;
 }
 
+.footer_links {
+    width: 48px;
+    height: 48px;
+}
+
 .socials {
     display: flex;
-    gap: 48px; 
+    gap: 48px;
     justify-self: end;
 }
 
-.socials img:hover {
+.socials_img:hover {
     transform: scale(1.1);
-  }
+}
