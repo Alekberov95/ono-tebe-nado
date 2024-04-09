@@ -8,21 +8,23 @@
     align-items: center;
 }
 
-.nostyle_nav {
+.nostyle {
     text-decoration: none;
 }
 
-.header_nav {
+.header_nav-list {
     display: flex;
     align-items: center;
+    gap: 32px;
 }
 
-.header_nav-list-item1 {
-    margin-right: 15px;
+.header_nav-list-item {
+    list-style-image: url(../images/list_marker.png);
 }
 
-.header_nav-list-item2 {
-    margin-right: 13px;
+.header_nav-list-item:first-child {
+    list-style-image: none;
+    list-style-type: none;
 }
 
 .contacts {
@@ -287,6 +289,10 @@
     flex-direction: column;
     text-align: center;
     justify-self: center;
+}
+
+.footer_nav-list {
+    list-style-type: none;
 }
 
 .footer_links {
